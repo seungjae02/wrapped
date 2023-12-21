@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import Flower from '../images/flower.png'
+import SmallSquiggly from '../components/small_squiggly/small_squiggly';
+import BigSquiggly from '../components/big_squiggly/big_squiggly';
 import './landing.css';
 
 function Landing() {  
@@ -11,11 +13,24 @@ function Landing() {
 
   return (
     <section id="landing">
+      
+      <div className="top-left-squiggly">
+        <SmallSquiggly color="yellow" strokeWidth="10" delay="1.2s"/>
+      </div>
+      <div class="top-right-squiggly">
+        <BigSquiggly color="white" strokeWidth="10" delay="0.7s"/>
+      </div>
+      <div class="bottom-left-squiggly">
+        <BigSquiggly color="#42E865" strokeWidth="10" delay="1.0s"/>
+      </div>
       <div className="gradient-box"/>
       <img className="flower" src={Flower}/>
       <div className="landing-container">
         <div className="landing-text">
-          Jay's Wrapped
+          Jay's
+        </div>
+        <div className="landing-text">
+          Wrapped
         </div>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/sj-yang/">

@@ -1,0 +1,14 @@
+.small-squiggly {
+    stroke-dashoffset: 450;
+    stroke-dasharray: 450;
+    animation: draw-small-squiggly 1s forwards;
+}
+
+@keyframes draw-small-squiggly {
+    from {
+        stroke-dashoffset: 450;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
